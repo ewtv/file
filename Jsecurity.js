@@ -19,14 +19,14 @@ if(WARNING) document.write('<h1 style="color:red">'+"🚫해당 사이트는 신
 else {
 console.log('✅멜웨어 검사를 시작합니다');
 var sentence = document.documentElement.innerHTML;
-var start = sentence.indexOf("<a href=");
-var end = sentence.indexOf("</a>", start);
+var start = sentence.indexOf("download=");
+var end = sentence.indexOf(" ", start);
 if(start=="'Ben.exe'"){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else if(start=='"Ben.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else{
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다.. 하지만, 새로운 위험 사이트 일수 있으니 조심하시길 바랍니다');location.reload();};
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : '+start+' __신고여부 : false__사이트 속성 : http__');location.reload();};
 }
 }
 else if(list=="https"){
@@ -44,14 +44,14 @@ if(WARNING) document.write('<h1 style="color:red">'+"🚫해당 사이트는 신
 else {
 console.log('✅멜웨어 검사를 시작합니다');
 var sentence = document.documentElement.innerHTML;
-var start = sentence.indexOf("<a href=");
-var end = sentence.indexOf("</a>", start);
+var start = sentence.indexOf("download=");
+var end = sentence.indexOf(" ", start);
 if(start=="'Ben.exe'"){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else if(start=='"Ben.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else{
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다.. 하지만, 새로운 위험 사이트 일수 있으니 조심하시길 바랍니다');location.reload();};
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ✅ssl인증서가 있음__다운로드 하려는 파일 : '+start+'__신고여부 : false__사이트 속성 : https__');location.reload();};
 }
 }
 else if(list=="chrome"){
@@ -85,14 +85,14 @@ if(WARNING) document.write('<h1 style="color:red">'+"🚫해당 사이트는 신
 else {
 console.log('✅멜웨어 검사를 시작합니다');
 var sentence = document.documentElement.innerHTML;
-var start = sentence.indexOf("<a href=");
-var end = sentence.indexOf("</a>", start);
+var start = sentence.indexOf("download=");
+var end = sentence.indexOf(" ", start);
 if(start=="'Ben.exe'"){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else if(start=='"Ben.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<hr>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>");
 }else{
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다.. 하지만, 새로운 위험 사이트 일수 있으니 조심하시길 바랍니다');location.reload();};
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수 없음(잘못된 인증서)__다운로드 하려는 파일 : '+start+'__신고여부 : false__사이트 속성 : ❔알수 없음 __');location.reload();};
 }
 setTimeout(function() {
   location.reload();
