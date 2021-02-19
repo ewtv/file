@@ -1,5 +1,5 @@
 var st_date = new Date().toISOString().substr(0, 10).replace('T', ' ');
-if(st_date=='2021-2-19'){
+if(st_date=='2021-02-19'){
 alert('✅Jsecurity [v2021.2.19] 가 작동 되었습니다. ✅데이터 베이스가 오늘 업데이트 되었습니다');
 }else{
 alert('✅Jsecurity[v2021.2.19] 가 작동 되었습니다. ⚠데이터 베이스가 오늘 업데이트 되진 않았습니다.');
