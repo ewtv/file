@@ -1,8 +1,8 @@
 var st_date = new Date().toISOString().substr(0, 10).replace('T', ' ');
-if(st_date=='2021-02-19'){
-alert('✅Jsecurity [v2021.2.19] 가 작동 되었습니다. ✅데이터 베이스가 오늘 업데이트 되었습니다');
+if(st_date=='2021-02-22'){
+alert('✅Jsecurity [v2021.2.22] 가 작동 되었습니다. ✅데이터 베이스가 오늘 업데이트 되었습니다');
 }else{
-alert('✅Jsecurity[v2021.2.19] 가 작동 되었습니다. ⚠데이터 베이스가 오늘 업데이트 되진 않았습니다.');
+alert('✅Jsecurity[v2021.2.22] 가 작동 되었습니다. ⚠데이터 베이스가 오늘 업데이트 되진 않았습니다.');
 }
 var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 var sentence = newURL;
@@ -11,7 +11,7 @@ var end = sentence.indexOf(":", start);
 
 var list = sentence.substring(start, end);   
 if(list=='http') {
-const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38'];
+const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38','http://hurr-durr.com//'];
 console.log('✅사이트 검사를 시작합니다');
 let m1 = newURL
 for(let index in arr){
@@ -41,7 +41,7 @@ alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았�
 }
 }
 else if(list=="https"){
-const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38'];
+const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38','http://hurr-durr.com//'];
 console.log('✅사이트 검사를 시작합니다');
 let m1 = newURL
 for(let index in arr){
@@ -87,7 +87,7 @@ alert('✅✅매우 안전한 오페라의 페이지입니다. 어떤 정보든 
 alert('안전한 페이지이므로 사이트 검사를 진행하지 않습니다.');
 }else{
 alert('❔죄송하지만, 이 페이지의 정보를 알수 없습니다. 페이지 속성 : '+list+' 잠시후 맬웨어 검사가 실행됩니다.');
-const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38'];
+const arr = ['https://blow.ga//vitamin303','https://blow.ga//vitamin303/','https://playentry.org//ds#!/free/5f6336272dea1a00e6cffb42?category=free&rows=20&title=&page=1&currentPage=1&sort=created&isOwnerView=false&search_title=','https://blow.ga//울프나쁨','https://blow.ga//울프나쁨/','https://www.fake.r-e.kr//','https://www.fake.r-e.kr','http://naver.me//5xNPYqk3','http://naver.me//5xNPYqk3/','https://qops.xyz//RGmLjE','https://blow.ga//20725','https://url.kr//AeMji8','https://blow.ga//vitaminface','https://www.itemmania.com','https://itemmania.com','https://qops.xyz//pgcIe7','https://blow.ga//sd','https://youtu.be//N_I2O1RBS38','http://hurr-durr.com//'];
 console.log('✅사이트 검사를 시작합니다');
 let m1 = newURL
 for(let index in arr){
