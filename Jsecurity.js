@@ -44,6 +44,12 @@ document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스
 else if(list=='"000.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : 000.exe(매우위험)"+"</p>"+"<p style='color:red'>"+"인증서 : 🚫인증서가 없음"+"</p>");
 }
+else if(list=="'WindowApplication.exe'"){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜섬웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : 🚫인증서가 없음"+"</p>");
+}
+else if(list=='"WindowApplication.exe"'){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜샘웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : 🚫인증서가 없음"+"</p>");
+}
 else if(start=='-1'){
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : http__');location.reload();
 }
@@ -85,6 +91,12 @@ document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스
 }
 else if(list=='"000.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : 000.exe(매우위험)"+"</p>"+"<p style='color:red'>"+"인증서 : ⚠ssl인증서가 있으나, 인증 업체가 올바르지 않음"+"</p>");
+}
+else if(list=="'WindowApplication.exe'"){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜섬웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : ⚠ssl인증서가 있으나, 인증 업체가 올바르지 않음"+"</p>");
+}
+else if(list=='"WindowApplication.exe"'){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜샘웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : ⚠ssl인증서가 있으나, 인증 업체가 올바르지 않음"+"</p>");
 }
 else if(start=='-1'){
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ✅올바른 ssl인증서가 있음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : https__');location.reload();
@@ -129,13 +141,13 @@ var end = sentence.indexOf(">", start+9);
 
 var list = sentence.substring(start+9, end);  
 if(list=="'Ben.exe'"){
-document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red>"+"인증서 : ❔알수없음(인증서가 올바르지 않음)"+"</p>");
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
 }else if(list=='"Ben.exe"'){
-document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red>"+"인증서 : ❔알수없음(인증서가 올바르지 않음)"+"</p>");
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
 if(list=="'Ben.exe'"){
-document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : 🚫인증서가 없음"+"</p>");
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
 }else if(list=='"Ben.exe"'){
-document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : 🚫인증서가 없음"+"</p>");
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Ben.exe(위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
 }else if(list=='"Spark.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : Spark.exe(매우위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : ❔알수 없음(ssl인증서가 올바르지 않음)"+"</p>");
 }
@@ -147,17 +159,37 @@ document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스
 }
 else if(list=='"000.exe"'){
 document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : 000.exe(매우위험)"+"</p>"+"<br>"+"<p style='color:red'>"+"인증서 : ❔알수 없음(ssl인증서가 올바르지 않음)"+"</p>");
-}else if(start=='-1'){
+}
+else if(list=="'WindowApplication.exe'"){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜섬웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
+}
+else if(list=='"WindowApplication.exe"'){
+document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스를 발견하였습니다!!"+"</h1>"+"<p style='color:blue'>"+"하지만 안심하세요! 현재 사이트의 모든 코드를 Jsecurity에서 차단하였습니다!"+"</p>"+"<hr>"+"<p style='color:red'>"+"바이러스 정보 : WindowApplication.exe--일명 직쏘 랜샘웨어(위험)"+"</p>"+"<p style='color:red'>"+"인증서 : ❔알수없음(ssl인증서가 올바르지 않음)"+"</p>");
+}
+else if(start=='-1'){
 var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 var sentence = newURL;
 var start = sentence.indexOf("");
 var end = sentence.indexOf(":", start);
 
 var list = sentence.substring(start+9, end);  
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : http__');location.reload();
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 :'+list+' __');location.reload();
 }
 else{
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : '+list+' __신고여부 : false__사이트 속성 : http__');location.reload();
+var sentence = document.documentElement.innerHTML;
+var start = sentence.indexOf("download=");
+var end = sentence.indexOf(">", start+9);
+
+var list = sentence.substring(start+9, end);
+var download = list; 
+var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+var sentence = newURL;
+var start = sentence.indexOf("");
+var end = sentence.indexOf(":", start);
+
+var list = sentence.substring(start+9, end); 
+var site = list; 
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : '+download+' __신고여부 : false__사이트 속성 :'+site+' http__');location.reload();
 };
 }
 }
