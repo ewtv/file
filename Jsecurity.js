@@ -147,4 +147,4 @@ alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았�
 }
 setTimeout(function() {
   location.reload();
-}, 300000);
+}, 300000);}
