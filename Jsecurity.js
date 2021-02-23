@@ -53,9 +53,17 @@ document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스
 else if(start=='-1'){
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : http__');location.reload();
 }
-else{
+else if(list==''){
+var sentence = document.documentElement.innerHTML;
+var start = sentence.indexOf("href=");
+var end = sentence.indexOf('" download', start+5);
+
+var list = sentence.substring(start+5 end);  
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : '+list+' __신고여부 : false__사이트 속성 : http__');location.reload();
 };
+}else{
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : 🚫ssl인증서가 없음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : http__');location.reload();
+}
 }
 }
 else if(list=="https"){
@@ -101,9 +109,16 @@ document.write('<h1 style="color:red">'+"🚫해당 사이트에서 바이러스
 else if(start=='-1'){
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ✅올바른 ssl인증서가 있음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : https__');location.reload();
 }
-else{
+else if(list==''){
+var sentence = document.documentElement.innerHTML;
+var start = sentence.indexOf("href=");
+var end = sentence.indexOf('" download', start+5);
+
+var list = sentence.substring(start+5 end);  
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ✅올바른 ssl인증서가 있음__다운로드 하려는 파일 : '+list+' __신고여부 : false__사이트 속성 : https__');location.reload();
 };
+}else{
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ✅올바른 ssl인증서가 있음__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 : https__');location.reload();
 }
 }
 else if(list=="chrome"){
@@ -175,7 +190,23 @@ var end = sentence.indexOf(":", start);
 var list = sentence.substring(start+9, end);  
 alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : 없음__신고여부 : false__사이트 속성 :'+list+' __');location.reload();
 }
-else{
+else if(list==''){
+var sentence = document.documentElement.innerHTML;
+var start = sentence.indexOf("href=");
+var end = sentence.indexOf('" download', start+5);
+
+var list = sentence.substring(start+5 end);
+var download = list;
+var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
+var sentence = newURL;
+var start = sentence.indexOf("");
+var end = sentence.indexOf(":", start);
+
+var list = sentence.substring(start+9, end);
+var site = list;
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : '+list+' __신고여부 : false__사이트 속성 :'+site+'__');location.reload();
+};
+}else{
 var sentence = document.documentElement.innerHTML;
 var start = sentence.indexOf("download=");
 var end = sentence.indexOf(">", start+9);
@@ -189,7 +220,7 @@ var end = sentence.indexOf(":", start);
 
 var list = sentence.substring(start+9, end); 
 var site = list; 
-alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : '+download+' __신고여부 : false__사이트 속성 :'+site+' http__');location.reload();
+alert('✅검사 완료 해당 사이트에서 맬웨어가 발견되지 않았으며 해당 사이트가 신고되지도 않았습니다. 잠시후 보고 결과를 보여드립니다.');alert('보고 결과__인증서 : ❔알수없음(ssl인증서가 올바르지 않음)__다운로드 하려는 파일 : '+download+' __신고여부 : false__사이트 속성 :'+site+'__');location.reload();
 };
 }
 }
