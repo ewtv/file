@@ -1,9 +1,11 @@
 var st_date = new Date().toISOString().substr(0, 10).replace('T', ' ');
-if(st_date=='2021-03-03'){
-alert('✅Jsecurity [v2021.03.03] 가 작동 되었습니다. ✅데이터 베이스가 오늘 업데이트 되었습니다');
+if(st_date=='2021-03-22'){
+alert('✅Jsecurity [v2021.03.22] 가 작동 되었습니다. ✅데이터 베이스가 오늘 업데이트 되었습니다');
 }else{
-alert('✅Jsecurity[v2021.03.03] 가 작동 되었습니다. ⚠데이터 베이스가 오늘 업데이트 되진 않았습니다.');
+alert('✅Jsecurity[v2021.03.22] 가 작동 되었습니다. ⚠데이터 베이스가 오늘 업데이트 되진 않았습니다.');
 }
+window.copy('✅[Jsecurity]에 의해 클립보드가 안전하게 처리되었습니다.');
+console.log('✅사용자의 보안을 위해 클립보드가 초기화되었습니다');
 var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname;
 var sentence = newURL;
 var start = sentence.indexOf("");
